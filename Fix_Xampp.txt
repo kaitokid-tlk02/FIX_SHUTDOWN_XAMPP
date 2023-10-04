@@ -1,0 +1,17 @@
+===================================================================
+------------------------------- CÁCH 1 ----------------------------
+===================================================================
+1. Đổi tên thư mục data trong thư mục mysql thành data_old
+2. Tạo một thư mục data
+3. Copy toàn bộ flie trong thư mục backup chuyển qua thư mục data
+4. Copy tất cả các database và file idata1 trong data_old sang data
+Lưu ý: Không được xóa idata1
+===================================================================
+------------------------------- CÁCH 2 ----------------------------
+===================================================================
+1. Đổi tên thư mục mysql/data thành mysql/data_old
+2. Tạo một bản sao của thư mục mysql/backup và đặt tên là mysql/data
+3. Sao chép tất cả các thư mục cơ sở dữ liệu của bạn mysql/data_old vào mysql/data 
+(ngoại trừ mysql, performance_schemavà phpmyadmin thư mục)
+4. Sao chép tập tin mysql/data_old/ibdata1 vào mysql/datathư mục
+5. Khởi động MySQL từ bảng điều khiển XAMPP
